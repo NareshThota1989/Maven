@@ -6,5 +6,10 @@ pipeline {
         git(url: 'https://github.com/NareshThota1989/Maven', branch: 'master')
       }
     }
+    stage('Build') {
+      steps {
+        sh 'mvn clean compile package install'
+      }
+    }
   }
 }
