@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('SCM') {
       steps {
-        git(url: 'https://github1.com/NareshThota1989/Maven', branch: 'master')
+        git(url: 'https://github.com/NareshThota1989/Maven', branch: 'master')
       }
     }
     stage('Build') {
