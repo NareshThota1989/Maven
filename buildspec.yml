@@ -1,0 +1,12 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      - mvn clean
+  build:
+    commands:
+      - mvn compile
+  post_build:
+    commands:
+      - mvn package
